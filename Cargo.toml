@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "iota-cli",
+    "iota-node"
+]

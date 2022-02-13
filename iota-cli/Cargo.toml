@@ -1,0 +1,18 @@
+[package]
+name = "iota-cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+iota-node = { path="../iota-node" }
+clap = { version = "3.0.14", features = ["derive"] }
+
+[lib]
+name = "iota_cli"
+path = "src/lib.rs"
+
+[[bin]]
+name = "iota"
+path = "src/main.rs"
